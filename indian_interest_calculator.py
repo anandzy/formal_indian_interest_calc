@@ -22,9 +22,6 @@ daily_interest_y2 = (borrowed_amount_y2 * interest / 100) / 30
 borrowed_amount_y3 = borrowed_amount_y2 + (borrowed_amount_y2 * interest / 100 * 12)
 daily_interest_y3 = (borrowed_amount_y3 * interest / 100) / 30
 
-print(borrowed_amount_y1, borrowed_amount_y2, borrowed_amount_y3)
-print(daily_interest_y1, daily_interest_y2, daily_interest_y3)
-
 def interestable_time():
     if years == 1:
         monthly_int_borrowed_amount_y1 = borrowed_amount * interest / 100 
@@ -33,7 +30,7 @@ def interestable_time():
         total_amount_y1 = borrowed_amount_y1 + int_year1_add_days
         print("The amount Originally borrowed "+str(borrowed_amount)+ " after added 1 annual interests "+str(borrowed_amount_y1)+" the remaining days "+str(year1_add_days)+ \
             " and interest for the remaing days "+str(int_year1_add_days)+" Grand Total Payable is: "+str(total_amount_y1)+".")
-            
+
     elif years == 2:
         monthly_int_borrowed_amount_y2 = borrowed_amount_y1 * interest / 100 
         year2_add_days = time_period - (years * 365)
