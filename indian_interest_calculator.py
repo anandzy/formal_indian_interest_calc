@@ -3,8 +3,8 @@ import decimal
 
 #Input
 interest = 1.5
-borrowed_amount = 200000
-borrowedTime = datetime.date(2018, 6, 1)
+borrowed_amount = 495678
+borrowedTime = datetime.date(2019, 9, 18)
 
 today = datetime.date.today()
 daily_interest = (borrowed_amount * interest / 100) / 30
